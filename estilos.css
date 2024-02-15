@@ -1,0 +1,25 @@
+.body{
+    background: seashell;
+    font-family: Arial,elvetica, sans-serif;
+}
+.h1_ti{
+    text-align: center;
+    color: #9370db;
+    font-size: 40px;
+}
+.yo{
+    margin-left: 650px;
+    width: 200px;
+}
+.info{
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.h3_habi{
+    color: #9370db;
+    margin-left: 400px;
+}
+.lista{
+    margin-left: 400px;
+}
