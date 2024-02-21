@@ -1,40 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <link rel="stylesheet" href = "estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales */
+    body.light-mode {
+      background-color: #fff;
+      color: #000;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+      background-color: #fff;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer .container {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer .container .text-muted {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer .container .text-muted:hover {
+      color: #fff;
+    }
+
+    .form-control, .btn-primary {
+      background-color: #333;
+      border-color: #333;
+      color: #fff;
+    }
+
+    .form-control:focus, .btn-primary:focus {
+      background-color: #555;
+      border-color: #555;
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-control:focus::placeholder {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
 </head>
-<body class="body">
-    <h1 class="h1_ti">Sobre mi</h1>
-    <img src="yo.jpg" alt="" class="yo">
-    <div class="info">Me llamo Irina Nandy Alvarez Olivera naci un 25 de abril del 2001, tengo 22 años, sali del colegio Pedro Poveda,
-        actualmente estoy estudiando la carrera de Ingenieria Empresarial en la Universidad Catolica Boliviana. 
-        Soy una persona paciente, de buenos valores y activa, con 17 años de formación estudiantil y más años de formación a futuro.
-        Soy creativa, con iniciativa y con muchos planes y proyectos a futuro.
-        Me gusta ayudar a los demás sin esperar nada a cambio.
+<body class="light-mode">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Mi Portafolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Resumen de habilidades</a></li>
+      <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+    </ul>
+    <button class="btn btn-outline-light btn-toggle-theme">Cambiar tema</button>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <section id="about">
+    <h2>Acerca de mí</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="center-vertical">
+          <div>
+            <h3>Irina Nandy Alvarez Olivera</h3>
+            <p> Tengo 22 años, sali del colegio Pedro Poveda, actualmente estoy estudiando la carrera de Ingenieria Empresarial en la Universidad Catolica Boliviana. Soy una persona paciente, de buenos valores y activa, con 17 años de formación estudiantil y más años de formación a futuro. Soy creativa, con iniciativa y con muchos planes y proyectos a futuro. Me gusta ayudar a los demás sin esperar nada a cambio. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="me.jpg" alt="Irina Alvarez" class="img-fluid" style="max-height: 300px;">
+      </div>
     </div>
-    <h3 class="h3_habi"> Mis habilidades </h3>
-    <ul class="lista">
-        <li> Resolucion de problemas </li>
-        <li> Planificacion y orientacion </li>
-        <li> Manualidades </li>
-    </ul>
-    <h3 class="h3_habi"> Mis Aptitudes </h3>
-    <ul class="lista">
-        <li> Creatividad </li>
-        <li> Empatia </li>
-        <li> Disciplina </li>
-        <li>Flexibilidad</li>
-        <li>Iniciativa</li>
-    </ul>
-    <h3 class="h3_habi"> Mis Aficiones </h3>
-    <ul class="lista">
-        <li> Leer </li>
-        <li> Armar rompecabezas </li>
-        <li> Aficion al cine </li>
-        <li> Dibujo </li>
-        <li>Postres</li>
-    </ul>
+  </section>
+
+  <section id="skills">
+    <!-- Sección Habilidades -->
+    <h2 class="text-center">Habilidades</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="habilidad1.png" alt="CSS" class="img-fluid" style="max-width: 150px;">
+      </div>
+      <div class="col-md-6 center-vertical">
+        <div>
+          <h3>Bloomberg</h3>
+          <p>Competente en el uso avanzado de Bloomberg Terminal, he realizado análisis financiero, gestionado carteras de inversión y llevado a cabo investigaciones detalladas sobre empresas y sectores financieros. Mi habilidad para navegar eficientemente por Bloomberg Professional me ha permitido extraer y analizar datos relevantes para la toma de decisiones estratégicas en roles anteriores.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="habilidad2.png" alt="HTML" class="img-fluid" style="max-width: 150px;">
+      </div>
+      <div class="col-md-6 center-vertical">
+        <div>
+          <h3>C++</h3>
+          <p>Competente en C++, he demostrado habilidades sólidas en programación orientada a objetos y manipulación de estructuras de datos. Mi experiencia incluye resolver problemas complejos y contribuir al éxito de equipos de desarrollo en roles anteriores.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="habilidad3.png" alt="JavaScript" class="img-fluid" style="max-width: 150px;">
+      </div>
+      <div class="col-md-6 center-vertical">
+        <div>
+          <h3>HTML</h3>
+          <p>Competente en HTML, he demostrado habilidades sólidas en el desarrollo web y la creación de contenido en línea. Mi experiencia incluye diseñar y desarrollar sitios web responsivos y visualmente atractivos, así como contribuir al éxito de proyectos web en roles anteriores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <!-- Sección Portafolio -->
+    <h2 class="text-center">Portafolio</h2>
+    <div class="row aling-items-center">
+      <div class="col-md-4 text-center">
+        <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid">
+        <h3>Proyecto 1</h3>
+        <p>Emprendimiento de ropa reciclada "Recycled Cicles" </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio1">Ver</button>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid">
+        <h3>Proyecto 2</h3>
+        <p>Emprendimiento de ambientadores reusables "ByNoff" </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio2">Ver</button>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid">
+        <h3>Proyecto 3</h3>
+        <p>Emprendimiento de cubiertos ecologicos de Bambu "Bambu A Comer"</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPortafolio3">Ver</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales -->
+  <div class="modal fade" id="modalPortafolio1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Proyecto 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid">
+        <p> Se centra en tomar prendas de segunda mano y transformarlas en piezas de moda sostenibles, rediseñadas y personalizadas, para ofrecer a los clientes la oportunidad de tener prendas únicas y exclusivas, mientras se contribuye a reducir el impacto ambiental de la industria de la moda. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Portafolio 2 -->
+<div class="modal fade" id="modalPortafolio2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Proyecto 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid">
+        <p> Ambientadores para automoviles con diferentes diseños, colores y aromas, el cual utiliza materiales sostenibles y envases reciclables. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Portafolio 3 -->
+<div class="modal fade" id="modalPortafolio3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Proyecto 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid">
+        <p>Empresa dedicada a la fabricación y distribución de cubiertos ecológicos de alta calidad, teniendo compromiso con la sostenibilidad y el respeto al medio ambiente el cual impulsa a ofrecer una alternativa eco amigable a los utensilios de plástico desechables.
+          Estos tenedores están diseñados pensando en la comodidad y la funcionalidad, sin comprometer la calidad ni el respeto por el planeta. Se utiliza materiales biodegradables y renovables, como la madera de bambú y el almidón de maíz, para crear utensilios duraderos.
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section id="services">
+    <!-- Sección Servicios -->
+    <h2 class="text-center">Servicios</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid">
+        <h3>Servicio 1</h3>
+        <p>Investigacion de mercado</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio1">Ver</button>
+      </div>
+      <div class="col-md-4">
+        <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid">
+        <h3>Servicio 2</h3>
+        <p>Cuidado de mascotas</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio2">Ver</button>
+      </div>
+      <div class="col-md-4">
+        <img src="servicio3.jpg" alt="Servicio 3" class="img-fluid">
+        <h3>Servicio 3</h3>
+        <p>Diseño y Desarrollo de Sitios Web</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio3">Ver</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales -->
+  <div class="modal fade" id="modalServicio1" tabindex="-1" role="dialog" aria-labelledby="modalServicio1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalServicio1Label">Servicio 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Investigaciones de mercado exhaustivas utilizando datos y herramientas disponibles en Bloomberg. Esto puede incluir análisis sectorial, evaluación de competidores, identificación de tendencias del mercado y análisis de oportunidades de inversión para informar las decisiones comerciales y de inversión.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalServicio2" tabindex="-1" role="dialog" aria-labelledby="modalServicio2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalServicio2Label">Servicio 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Ofrezco servicios de cuidado de mascotas a clientes locales, incluyendo paseos diarios, visitas a domicilio para alimentar y atender las necesidades de las mascotas, y cuidado durante las vacaciones de los propietarios.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalServicio3" tabindex="-1" role="dialog" aria-labelledby="modalServicio3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalServicio3Label">Servicio 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Sitios web personalizados para empresas, organizaciones o individuos, asegurándose de que sean visualmente atractivos, funcionales y compatibles con dispositivos móviles.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <!-- Sección Contacto -->
+    <h2 class="text-center">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <input type="text" class="form-control" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container text-center">
+    <span class="text-muted">© 2024 Irina Alvarez. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.querySelector('.btn-toggle-theme').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
 </body>
 </html>
